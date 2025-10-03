@@ -3,6 +3,8 @@
         <?php
         /* $aprobados -> el nª de notas "aprobados" -> 5 */
         /* $suspensos -> el nª de notas "suspensos" -> 4 */
+            $aprobados = 0;
+            $suspensos = 0;
             $notas = array(5,3,2,7,10,9,8,2,4);
             if ($notas[0] >= 5) {
                 $aprobados = 1; }
