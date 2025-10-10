@@ -3,7 +3,7 @@
         <?php
         /* $aprobados -> el nª de notas "aprobados" -> 5 */
         /* $suspensos -> el nª de notas "suspensos" -> 4 */
-            $aprobados = 0;
+/*            $aprobados = 0;
             $suspensos = 0;
             $notas = array(5,3,2,7,10,9,8,2,4);
             if ($notas[0] >= 5) {
@@ -44,9 +44,88 @@
                 $suspensos = $suspensos + 1; }
             echo "El numero de aprobados es " . $aprobados;
             echo "<br>";
-            echo "El numero de suspensos es " . $suspensos;
+            echo "El numero de suspensos es " . $suspensos; */
 
-            
+            echo "Otra forma de hacerlo con case";
+            echo "<br>";
+            $aprobados = 0;
+            $suspensos = 0;
+            $notas = array(5,3,2,7,10,9,8,2,4);
+            switch ($notas[0] >= 5) {
+                case true:
+                    $aprobados = 1;
+                    break;
+                case false:
+                    $suspensos = 1;
+                    break;
+            }
+            switch ($notas[1] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[2] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[3] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[4] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[5] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[6] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[7] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            switch ($notas[8] >= 5) {
+                case true:
+                    $aprobados = $aprobados + 1;
+                    break;
+                case false:
+                    $suspensos = $suspensos + 1;
+                    break;
+            }
+            echo "El numero de aprobados es " . $aprobados;
+            echo "<br>";
+            echo "El numero de suspensos es " . $suspensos; 
         ?>
     </body>
 </html>
