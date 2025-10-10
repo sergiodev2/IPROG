@@ -5,7 +5,7 @@
         /* --> Descuento de un 10%. Almacena el valor modificado en su posicion
            --> Sino, incremento un 5% el precio y actualizo */
             $precioKG = array(10,11.3,1.28,4.7,2);
-            if ($precioKG >= 4) {
+            if ($precioKG︃[0] >= 4) {
                 $precioKG[0] = $precioKG[0] * 0.90; }
             else {
                 $precioKG[0] = $precioKG[0] * 1.05;
@@ -25,7 +25,7 @@
             else {
                 $precioKG[3] = $precioKG[3] * 1.05;
             }
-            if ($precioKG >= 4) {
+            if ($precioKG [4]>= 4) {
                 $precioKG[4] = $precioKG[4] * 0.90; }
             else {
                 $precioKG[4] = $precioKG[4] * 1.05;
