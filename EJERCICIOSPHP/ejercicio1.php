@@ -180,7 +180,7 @@
             echo "<br>";
             echo "Otra forma de hacerlo con bucles do while: ";
             echo "<br>";
-            $notas = array(5,3,2,7,10,9,8,2,4);
+            $notas = array();
             $aprobados = 0;
             $suspensos = 0;
             $i = 0;
