@@ -126,6 +126,76 @@
             echo "El numero de aprobados es " . $aprobados;
             echo "<br>";
             echo "El numero de suspensos es " . $suspensos; 
+            #Ejercicio 1 con bucle foreach
+            echo "<br>";
+            echo "Otra forma de hacerlo con bucles foreach";
+            echo "<br>";
+            $notas = array(5,3,2,7,10,9,8,2,4);
+            $aprobados = 0;
+            $suspensos = 0;
+            foreach ($notas as $nota) {
+                if ($nota >= 5) {
+                    $aprobados = $aprobados + 1; }
+                else {
+                    $suspensos = $suspensos + 1; } }
+            echo "El numero de aprobados es " . $aprobados;
+            echo "<br>";
+            echo "El numero de suspensos es " . $suspensos;
+            #Ejercicio 1 con bucle for
+            echo "<br>";
+            echo "Otra forma de hacerlo con bucles for: ";
+            echo "<br>";
+            $notas = array(5,3,2,7,10,9,8,2,4);
+            $aprobados = 0;
+            $suspensos = 0;
+            for ($i = 0; $i < count($notas); $i++)
+            {
+                if ($notas[$i] >= 5) {
+                    $aprobados = $aprobados + 1; }
+                else {
+                    $suspensos = $suspensos + 1; } }
+            echo "El numero de aprobados es " . $aprobados;
+            echo "<br>";
+            echo "El numero de suspensos es " . $suspensos;
+            #Ejercicio 1 con bucle while
+            echo "<br>";
+            echo "Otra forma de hacerlo con bucles while: ";
+            echo "<br>";
+            $notas = array(5,3,2,7,10,9,8,2,4);
+            $aprobados = 0;
+            $suspensos = 0;
+            $i = 0;
+            while ($i < count($notas))
+            {
+                if ($notas[$i] >= 5) {
+                    $aprobados = $aprobados + 1; }
+                else {
+                    $suspensos = $suspensos + 1; }
+                $i = $i + 1; }
+            echo "El numero de aprobados es " . $aprobados;
+            echo "<br>";
+            echo "El numero de suspensos es " . $suspensos;
+
+            #Ejercicio 1 con bucle do while
+            echo "<br>";
+            echo "Otra forma de hacerlo con bucles do while: ";
+            echo "<br>";
+            $notas = array(5,3,2,7,10,9,8,2,4);
+            $aprobados = 0;
+            $suspensos = 0;
+            $i = 0;
+            do
+            {
+                if ($notas[$i] >= 5) {
+                    $aprobados = $aprobados + 1; }
+                else {
+                    $suspensos = $suspensos + 1; }
+                $i = $i + 1; }
+            while ($i < count($notas));
+            echo "El numero de aprobados es " . $aprobados;
+            echo "<br>";
+            echo "El numero de suspensos es " . $suspensos;
         ?>
+            
     </body>
 </html>
