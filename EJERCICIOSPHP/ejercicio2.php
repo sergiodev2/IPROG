@@ -94,6 +94,64 @@
         }
         echo "El precio de la fruta es " . $precioKG[4];
         echo "<br>";
+
+        #hazlo con un bucle for
+        echo "Otra forma de hacerlo con un bucle for";
+        echo "<br>";
+        $precioKG = array(10,11.3,1.28,4.7,2);
+        for ($i = 0; $i < count($precioKG); $i++) {
+            if ($precioKG[$i] >= 4) {
+                $precioKG[$i] = $precioKG[$i] * 0.90;
+            } else {
+                $precioKG[$i] = $precioKG[$i] * 1.05;
+            }
+            echo "El precio de la fruta es " . $precioKG[$i];
+            echo "<br>";
+        }
+        #hazlo con un bucle foreach
+        echo "Otra forma de hacerlo con un bucle foreach";
+        echo "<br>";
+        $precioKG = array(10,11.3,1.28,4.7,2);
+        foreach ($precioKG as $index => $precio) {
+            if ($precio >= 4) {
+                $precioKG[$index] = $precio * 0.90;
+            } else {
+                $precioKG[$index] = $precio * 1.05;
+            }
+            echo "El precio de la fruta es " . $precioKG[$index];
+            echo "<br>";
+        }
+        # while
+        echo "Otra forma de hacerlo con un bucle while";
+        echo "<br>";
+        $precioKG = array(10,11.3,1.28,4.7,2);
+        $i = 0;
+        while ($i < count($precioKG)) {
+            if ($precioKG[$i] >= 4) {
+                $precioKG[$i] = $precioKG[$i] * 0.90;
+            } else {
+                $precioKG[$i] = $precioKG[$i] * 1.05;
+            }
+            echo "El precio de la fruta es " . $precioKG[$i];
+            echo "<br>";
+            $i++;
+        }
+        #con do while
+        echo "Otra forma de hacerlo con un bucle do while";
+        echo "<br>";
+        $precioKG = array(10,11.3,1.28,4.7,2);
+        $i = 0;
+        do {
+            if ($precioKG[$i] >= 4) {
+                $precioKG[$i] = $precioKG[$i] * 0.90;
+            } else {
+                $precioKG[$i] = $precioKG[$i] * 1.05;
+            }
+            echo "El precio de la fruta es " . $precioKG[$i];
+            echo "<br>";
+            $i++;
+        } while ($i < count($precioKG));
+
         ?>
     </body>
 </html>

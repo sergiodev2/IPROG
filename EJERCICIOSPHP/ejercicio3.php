@@ -46,7 +46,8 @@
                 break;
         }
         echo "<br>";
-        echo "La calificacion es " . $calificacion;            
+        echo "La calificacion es " . $calificacion;
+        echo "<br>";
         ?>
     </body>
 </html>
