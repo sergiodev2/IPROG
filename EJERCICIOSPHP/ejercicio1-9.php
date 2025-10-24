@@ -133,7 +133,7 @@
         $num2 = 0;
         $resultado = 0;
         while ($numcal != 0){
-            echo "Que operación quieres hacer";
+            echo "¿Que operación quieres hacer?\n";
             $numcal = readline("1. Suma | 2. Resta | 3. Multiplicación | 4. Divisón | 5. Calculo de módulo | 0. Salir: ");
                 if ($numcal == 1){
                     $num1 = readline("Introduzca los datos del numero 1: ");
