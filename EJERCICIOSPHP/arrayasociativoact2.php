@@ -1,6 +1,4 @@
 <?php
-// DATOS INICIALES
-// He asignado la clave 'E104' a Carlos, ya que en tu ejemplo le faltaba.
 $empleados = [
     'E105' => 'Carlos Gutiérrez',
     'E101' => 'Ana López',
@@ -12,26 +10,20 @@ function ordenarEmpleados($array, $criterio) {
 
     $auxiliar = $array;
 
-    if ($criterio === 'ID') {
-        ksort($auxiliar); 
-    } elseif ($criterio === 'NOMBRE') {
-        asort($auxiliar);
-    }
+    ksort($auxiliar); 
+    asort($auxiliar);
 
     return $auxiliar;
 }
 
+$ordenadoporid = ordenarEmpleados($empleados, $criterio);
 
-// 1. Ordenado por ID Clave usando ksort
-$ordenadoPorId = ordenarEmpleados($empleados, 'ID');
-
-echo "--- Ordenado por ID (ksort) ---\n";
-print_r($ordenadoPorId);
+echo "Ordenado por ID \n";
+print_r($ordenadoporid);
 
 
-// 2. Ordenado por Nombre (Valor) usando asort
 $ordenadoPorNombre = ordenarEmpleados($empleados, 'NOMBRE');
 
-echo "\n--- Ordenado por Nombre (asort) ---\n";
+echo "\n Ordenado por Nombre \n";
 print_r($ordenadoPorNombre);
 ?>

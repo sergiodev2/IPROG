@@ -1,20 +1,19 @@
 <?php
 
-$notas_t1 = [
+$n1 = [
     'Matemáticas' => 7.5,
     'Lengua'      => 8.0,
     'Historia'    => 6.0,
 ];
 
-$notas_t2 = [
+$n2 = [
     'Matemáticas' => 8.5, 
     'Inglés'      => 9.0,
 ];
 
-// 1. Unir arrays (array_merge)
-$boletin_final = array_merge($notas_t1, $notas_t2);
+$boletin_final = array_merge($n1, $n2);
 
-echo "--- Boletín de Notas ---\n";
+echo " Notas \n";
 foreach ($boletin_final as $asignatura => $nota) {
     echo "$asignatura: $nota\n";
 }
