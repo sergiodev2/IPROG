@@ -1,0 +1,108 @@
+<?php
+/*  
+for ($i = 1; $i <= 10; $i++ ){
+    for ($j = 0; $j <= 10; $j++ ){
+        $multi = $i * $j;
+        echo "$i x  $j =  " . $multi . "\n";
+    }
+
+}
+Tabla multiplicar
+*/
+
+/* Cubos de los numeros del 1 al 10 
+for($i = 1; $i <= 10; $i++){
+    echo "Cubo del $i = " . $i * $i * $i . "\n";
+    }
+*/
+/* 
+    $Baloncesto = array(
+        "Horario" => "jueves y viernes",
+        "Edad" => 0,
+        "Equipación" => "Si",
+        "Frecuencia" => "Semanal")
+    );
+        - Baloncesto:
+                - Horario: jueves y viernes.    
+                - Precio aficiliación: 15€/mes.
+                - Edad media jugadores: Se calcula a partir de otro array.
+                - Equipación oficial: Si/No.
+                - Frecuencia partidos competeción: Semanal.
+
+        - Padel:
+                - Horario: lunes y miércoles.    
+                - Precio aficiliación: 30€/mes.
+                - Edad media jugadores: Se calcula a partir de otro array.
+                - Equipación oficial: Si/No.
+                - Frecuencia partidos competeción: Mensual.
+        - Futbol:
+                - Horario: Sábados.    
+                - Precio aficiliación: 5€/mes.
+                - Edad media jugadores: Se calcula a partir de otro array.
+                - Equipación oficial: Si/No.
+                - Frecuencia partidos competeción: Semanal.
+
+$Baloncesto= array(
+    "Nombre" =>"Edad") // De este array se saca la media de la edad
+$Padel= array(
+    "Nombre" =>"Edad") // De este array se saca la media de la edad
+$Futbol= array(
+    "Nombre" =>"Edad") // De este array se saca la media de la edad
+
+*/
+$Baloncesto = array(
+        "Horario" => "Sabado",
+        "Edad" => 0,
+        "Equipación" => "Si",
+        "Frecuencia" => "Semanal")
+    ;
+$padel = array(
+        "Horario" => "jueves y viernes",
+        "Edad" => 0,
+        "Equipación" => "Si",
+        "Frecuencia" => "Semanal")
+    ;
+$futbol = array(
+        "Horario" => "Martes",
+        "Edad" => 0,
+        "Equipación" => "Si",
+        "Frecuencia" => "Semanal")
+    ;
+$personasB = [
+    "Sergio" => 16,
+    "Martin" => 14,
+    "Ana" => 16,
+    "Julio" => 19,
+];
+$personasP = [
+    "Lola" => 20,
+    "Mario" => 23,
+    "Pablo" => 16,
+    "Manolo" => 19,
+];
+
+$personasF = [
+    "Lola" => 20,
+    "Mario" => 23,
+    "Pablo" => 16,
+    "Manolo" => 19,
+];
+
+$media = 0;
+    foreach ($personasB as $nombre=>$edad) {
+        $media = $media + $edad;
+        
+    };
+    $media = $media / count($personasB);
+    echo "La media de edad en baloncesto es de : " . $media;
+
+$media22 = 0;
+    foreach ($personasP as $nombre=>$edad) {
+        $media2 = $media2 + $edad;
+        
+    };
+    $media2 = $media2 / count($personasB);
+    echo "La media de edad en baloncesto es de : " . $media2;
+
+
+?>
