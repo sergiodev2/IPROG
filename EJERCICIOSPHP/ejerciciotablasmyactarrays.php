@@ -94,15 +94,42 @@ $media = 0;
         
     };
     $media = $media / count($personasB);
-    echo "La media de edad en baloncesto es de : " . $media;
+    echo "La media de edad en baloncesto es de : " . $media . "\n";
 
-$media22 = 0;
+$media2 = 0;
     foreach ($personasP as $nombre=>$edad) {
         $media2 = $media2 + $edad;
         
     };
-    $media2 = $media2 / count($personasB);
-    echo "La media de edad en baloncesto es de : " . $media2;
+    $media2 = $media2 / count($personasP);
+    echo "La media de edad en padel es de : " . $media2 . "\n";
+
+
+$media3 = 0;
+    foreach ($personasF as $nombre=>$edad) {
+        $media3 = $media3 + $edad;
+        
+    };
+    $media3 = $media3 / count($personasF);
+    echo "La media de edad en Futbol es de : " . $media3 . "\n";
+
+
+//b.- Inserta la edad en el array correspondiente (actualizar)
+$Baloncesto["Edad"] = $media;
+$padel["Edad"] = $media2;
+$futbol["Edad"] = $media3;
+
+//c.- Inserta un nuevo campo llamado "federado", donde se asocie
+// el nombre del equipo federado
+$Baloncesto["Federado"] = "Equipo A";
+$padel["Federado"] = "Equipo B";
+$futbol["Federado"] = "Equipo C";
+
+
+// d.- Elemina la información referente a la frecuencia.
+unset($Baloncesto["Frecuencia"]);
+unset($padel["Frecuencia"]);
+unset($futbol["Frecuencia"]);
 
 
 ?>
