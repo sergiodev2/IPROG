@@ -1,12 +1,12 @@
-<html>
-    <body>
-        <?php
-        # Ejercicio para imprimir la lista de los 100 primeros numeros pares
-        for ($i = 1; $i <= 100; $i++) {
-            $numeroPar = $i * 2;
-            echo "Número par: " . $numeroPar;
-            echo "<br>";
-        }
-        ?>
-    </body>
-</html>
+<?php 
+#Define tu nombre completo. Imprime la longitud e indica si es "Corto" (menos de 10 caracteres) o "Largo".
+
+$nombre = "Sergio castilla roncel";
+if (strlen($nombre) > 10 ){
+    echo "Es larguito compi";
+}
+else {
+    echo "Corto como el cafe";
+}
+
+?>
